@@ -40,12 +40,10 @@ The palette is built around the Omacon visual identity — dark purples, electri
 ## Installation
 
 ```bash
-git clone https://github.com/Eidan78/omarchy-omacon-theme ~/.config/omarchy/themes/omacon
+omarchy-theme-install https://github.com/Eidan78/omarchy-omacon-theme
 ```
 
 Then select **omacon** from the Omarchy theme menu (`Super + Ctrl + Shift + Space`).
-
-This theme exists because that event reminded me why I love computers.
 
 ---
 
