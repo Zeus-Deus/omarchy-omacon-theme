@@ -1,5 +1,32 @@
 @define-color background-color #130c2b;
-@define-color border-color #9e9e9e;
-@define-color label #f5caff;
-@define-color image #f5caff;
+@define-color border-color #751e79;
+@define-color label #ffbcff;
+@define-color image #ffbcff;
 @define-color progress #ff66ff;
+
+window {
+    background-color: alpha(@background-color, 0.9);
+    border: 1px solid @border-color;
+    box-shadow: 0 0 15px alpha(#ff66ff, 0.6),
+                0 0 30px alpha(#751e79, 0.3);
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+progressbar {
+    min-width: 300px;
+    min-height: 4px;
+}
+
+progressbar trough {
+    background-color: alpha(#ffbcff, 0.15);
+    border-radius: 20px;
+    min-height: 4px;
+}
+
+progressbar progress {
+    background-image: linear-gradient(to right, #ffbcff, #ff66ff, #f200f3);
+    border-radius: 20px;
+    min-height: 4px;
+    box-shadow: 0 0 8px alpha(#f200f3, 0.8);
+}
